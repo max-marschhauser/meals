@@ -5,17 +5,17 @@ class CategoryGridItem extends StatelessWidget {
   const CategoryGridItem({
     super.key,
     required this.category,
-    required this.onSelectedCategory,
+    required this.onSelectCategory,
   });
 
   final Category category;
-  final void Function() onSelectedCategory;
+  final void Function() onSelectCategory;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       // postoji GestureDetector widget koji napravi da je widget tappable, a InkWell isto to radi ali daje i visualnu responzivnost na pritisak
-      onTap: onSelectedCategory,
+      onTap: onSelectCategory,
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(16),
       child: Container(

@@ -19,7 +19,7 @@ class MainDrawer extends StatelessWidget {
                   Theme.of(context)
                       .colorScheme
                       .primaryContainer
-                      .withOpacity(0.8)
+                      .withOpacity(0.8),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -27,8 +27,11 @@ class MainDrawer extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(Icons.fastfood,
-                    size: 48, color: Theme.of(context).colorScheme.primary),
+                Icon(
+                  Icons.fastfood,
+                  size: 48,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
                 const SizedBox(width: 18),
                 Text(
                   'Cooking Up!',
@@ -40,8 +43,11 @@ class MainDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.restaurant,
-                size: 26, color: Theme.of(context).colorScheme.onBackground),
+            leading: Icon(
+              Icons.restaurant,
+              size: 26,
+              color: Theme.of(context).colorScheme.onBackground,
+            ),
             title: Text(
               'Meals',
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
@@ -54,8 +60,11 @@ class MainDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings,
-                size: 26, color: Theme.of(context).colorScheme.onBackground),
+            leading: Icon(
+              Icons.settings,
+              size: 26,
+              color: Theme.of(context).colorScheme.onBackground,
+            ),
             title: Text(
               'Filters',
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
